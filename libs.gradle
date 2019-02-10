@@ -1,0 +1,18 @@
+ext.LIBS = [
+  jackson: [
+    'com.fasterxml.jackson.core:jackson-core:2.8.9',
+    'com.fasterxml.jackson.core:jackson-databind:2.8.9',
+    'com.fasterxml.jackson.core:jackson-annotations:2.8.9'
+  ],
+  sqlite: [
+    'org.xerial:sqlite-jdbc:3.8.11.2'
+  ],
+  elasticsearch: [
+    'org.elasticsearch.client:elasticsearch-rest-high-level-client:6.2.2'
+  ]
+]
+ext.TESTLIBS = [
+  junit: [
+    "junit:junit"
+  ]
+]

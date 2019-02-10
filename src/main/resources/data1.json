@@ -1,0 +1,98 @@
+[
+  {
+    "id": "100001",
+    "prodid": "1001023",
+    "sku": "9873634",
+    "name": "Flannel shirt", 
+    "properties": [
+      {"color": "Red"},
+      {"size": "S"},
+      {"category": "Mens|Shirts"}
+    ]
+  },
+  {
+    "id": "100002",
+    "prodid": "1001023",
+    "sku": "9873635",
+    "name": "Flannel shirt", 
+    "properties": [
+      {"color": "Red"},
+      {"size": "M"},
+      {"category": "Mens|Shirts"}
+    ]
+  },
+  {
+    "id": "100003",
+    "prodid": "1001023",
+    "sku": "9873636",
+    "name": "Flannel shirt", 
+    "properties": [
+      {"color": "Red"},
+      {"size": "L"},
+      {"category": "Mens|Shirts"}
+    ]
+  },
+  {
+    "id": "100001",
+    "prodid": "1001023",
+    "sku": "9873637",
+    "name": "Flannel shirt", 
+    "properties": [
+      {"color": "Blue"},
+      {"size": "S"},
+      {"category": "Mens|Shirts"}
+    ]
+  },
+  {
+    "id": "100002",
+    "prodid": "1001023",
+    "sku": "9873638",
+    "name": "Flannel shirt", 
+    "properties": [
+      {"color": "Blue"},
+      {"size": "M"},
+      {"category": "Mens|Shirts"}
+    ]
+  },
+  {
+    "id": "100003",
+    "prodid": "1001023",
+    "sku": "9873639",
+    "name": "Flannel shirt", 
+    "properties": [
+      {"color": "Blue"},
+      {"size": "L"},
+      {"category": "Mens|Shirts"}
+    ]
+  },
+  {
+    "id": "100010",
+    "prodid": "1004748",
+    "name": "Cargo shorts", 
+    "properties": [
+      {"color": "Putty"},
+      {"size": "S"},
+      {"category": "Mens|Shorts"}
+    ]
+  },
+  {
+    "id": "100010",
+    "prodid": "1004749",
+    "name": "Cargo shorts", 
+    "properties": [
+      {"color": "Putty"},
+      {"size": "M"},
+      {"category": "Mens|Shorts"}
+    ]
+  },
+  {
+    "id": "100010",
+    "prodid": "1004750",
+    "name": "Cargo shorts", 
+    "properties": [
+      {"color": "Putty"},
+      {"size": "L"},
+      {"category": "Mens|Shorts"}
+    ]
+  }
+]
