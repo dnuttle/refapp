@@ -3,6 +3,7 @@ package net.nuttle.rest;
 import java.io.IOException;
 import java.util.List;
 
+import org.elasticsearch.action.search.SearchResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,7 @@ import net.nuttle.json.JacksonUtil;
 import net.nuttle.model.Customer;
 import net.nuttle.model.json.Product;
 import net.nuttle.service.DataService;
+import net.nuttle.service.ESService;
 import net.nuttle.service.SimpleService;
 
 @Controller
@@ -29,13 +31,16 @@ public class MainController {
   private SimpleService simpleService;
   private JacksonUtil jackson;
   private FileService fileService;
+  private ESService esService;
   
   @Autowired
-  public MainController(DataService dataService, SimpleService simpleService, FileService fileService, JacksonUtil jackson) {
+  public MainController(DataService dataService, SimpleService simpleService, FileService fileService, JacksonUtil jackson,
+      ESService esService) {
     this.dataService = dataService;
     this.jackson = jackson;
     this.simpleService = simpleService;
     this.fileService = fileService;
+    this.esService = esService;
   }
 
   @GetMapping("/")
@@ -92,5 +97,13 @@ public class MainController {
   @ResponseBody
   public String readFile(@PathVariable String path, @RequestParam(required=true) String charset) throws IOException {
     return fileService.readFile(path, charset);
+  }
+  
+  //ELASTICSEARCH
+  
+  @GetMapping(value="/es/shakespeare/all")
+  @ResponseBody
+  public SearchResponse matchAllShakespeare() throws IOException {
+    return esService.matchAllShakespeare();
   }
 }

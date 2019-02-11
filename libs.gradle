@@ -8,7 +8,9 @@ ext.LIBS = [
     'org.xerial:sqlite-jdbc:3.8.11.2'
   ],
   elasticsearch: [
-    'org.elasticsearch.client:elasticsearch-rest-high-level-client:6.2.2'
+    'org.elasticsearch.client:elasticsearch-rest-high-level-client:6.5.4',
+    'org.elasticsearch:elasticsearch:6.5.4',
+    'org.elasticsearch.client:transport:6.5.4'
   ]
 ]
 ext.TESTLIBS = [
